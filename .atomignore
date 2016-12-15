@@ -1,0 +1,4 @@
+.atomignore
+src/game.js
+src/game.min.css
+coffee-compile.cson

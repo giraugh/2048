@@ -1,0 +1,18 @@
+//output: ../game.html
+
+html
+  head
+    link(rel="stylesheet", type="text/css", href="src/game.min.css")
+
+  body
+    .wrapper
+      p#helper Use the arrow keys to  slide
+      canvas#main(width="296", height="296")
+
+  footer
+    script(src="src/helper.js")
+    script(src="src/game.js")
+    script.
+      gameLost = function() {
+        DocGet('helper').innerHTML = "You Lost"
+      }
