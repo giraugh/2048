@@ -2,3 +2,6 @@
 src/game.js
 src/game.min.css
 coffee-compile.cson
+game.html
+LICENSE
+README.md

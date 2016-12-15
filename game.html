@@ -5,8 +5,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <p id="helper">Use the arrow keys to  slide</p>
-      <canvas id="main" width="296" height="296"></canvas>
+      <p id="helper">Use arrow keys to  slide</p>
+      <canvas id="main" width="296" height="296"></canvas><a id="restart" onclick="location.reload()">Restart</a>
     </div>
   </body>
   <footer>
@@ -14,7 +14,8 @@
     <script src="src/game.js"></script>
     <script>
       gameLost = function() {
-        DocGet('helper').innerHTML = "You Lost"
+        DocGet('helper').innerHTML = "Game Over"
+        DocGet('restart').style.display = "block"
       }
     </script>
   </footer>

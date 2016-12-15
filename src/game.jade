@@ -6,13 +6,15 @@ html
 
   body
     .wrapper
-      p#helper Use the arrow keys to  slide
+      p#helper Use arrow keys to  slide
       canvas#main(width="296", height="296")
+      a#restart(onclick="location.reload()") Restart
 
   footer
     script(src="src/helper.js")
     script(src="src/game.js")
     script.
       gameLost = function() {
-        DocGet('helper').innerHTML = "You Lost"
+        DocGet('helper').innerHTML = "Game Over"
+        DocGet('restart').style.display = "block"
       }
